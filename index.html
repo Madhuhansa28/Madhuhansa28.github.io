@@ -172,6 +172,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
       <div class="cta">
         <a class="btn primary" href="#projects">View projects →</a>
         <a class="btn" href="https://github.com/Madhuhansa28?tab=repositories" target="_blank" rel="noopener">GitHub ↗</a>
+        <a class="btn" href="https://www.linkedin.com/in/madhuhansa-wijesinghe-a9404a371/" target="_blank" rel="noopener">LinkedIn ↗</a>
       </div>
     </div>
     <figure class="chip" style="margin:0">
@@ -209,52 +210,6 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 
       <article class="sheet">
         <div class="sheet-main">
-          <div class="sheet-top"><span class="tag">Individual</span><span>TinyML · Wearables · HCI</span></div>
-          <h3>Wearable Gesture Controller using TinyML</h3>
-          <p>A glove that controls presentations wirelessly by acting as a Bluetooth keyboard, so the computer needs no extra software.</p>
-          <ul class="pts">
-            <li>Trained a neural network in Edge Impulse on MPU6050 motion data to classify swipe and wrist-twist gestures on an ESP32.</li>
-            <li>Added filtering so accidental movements don't trigger slide changes.</li>
-            <li>Ran a within-subjects user study comparing gesture and keyboard input; every participant preferred the glove.</li>
-          </ul>
-          <ul class="stack"><li>ESP32</li><li>MPU6050</li><li>Edge Impulse</li><li>Arduino C++</li><li>BLE HID</li><li>Python</li><li>SciPy</li></ul>
-          <div class="links"><a href="#" target="_blank" rel="noopener">Demo video ↗</a><a href="https://github.com/Madhuhansa28?tab=repositories" target="_blank" rel="noopener">Code ↗</a></div>
-        </div>
-        <aside class="spec">
-          <h4>Measured</h4>
-          <dl>
-            <div><dt>Test accuracy</dt><dd>96.8%</dd></div>
-            <div><dt>Inference time</dt><dd>7 ms <small>on the ESP32</small></dd></div>
-            <div><dt>Usability (SUS)</dt><dd>90.5 <small>vs 83.0 for keyboard, n = 5</small></dd></div>
-          </dl>
-        </aside>
-      </article>
-
-      <article class="sheet">
-        <div class="sheet-main">
-          <div class="sheet-top"><span class="tag live">Ongoing</span><span class="tag">Individual</span><span>HPC · Edge AI</span></div>
-          <h3>Parallel and Quantized CNN Inference on Edge and GPU Hardware</h3>
-          <p>A CNN inference engine written from scratch, then sped up step by step with multicore parallelism, SIMD, INT8 quantization and GPU kernels.</p>
-          <ul class="pts">
-            <li>Every version is benchmarked for speedup, scaling, accuracy and energy use.</li>
-            <li>Results are compared against TensorFlow Lite on three platforms.</li>
-          </ul>
-          <ul class="stack"><li>C/C++</li><li>OpenMP</li><li>CUDA</li><li>ARM NEON / AVX</li><li>PyTorch</li><li>TensorFlow Lite</li></ul>
-          <div class="links"><a href="https://github.com/Madhuhansa28?tab=repositories" target="_blank" rel="noopener">Code ↗</a></div>
-        </div>
-        <aside class="spec">
-          <h4>Benchmark targets</h4>
-          <dl>
-            <div><dt>Edge</dt><dd class="txt">Raspberry Pi</dd></div>
-            <div><dt>CPU</dt><dd class="txt">Multicore x86</dd></div>
-            <div><dt>GPU</dt><dd class="txt">NVIDIA CUDA</dd></div>
-            <div><dt>Precision</dt><dd class="txt">FP32 → INT8</dd></div>
-          </dl>
-        </aside>
-      </article>
-
-      <article class="sheet">
-        <div class="sheet-main">
           <div class="sheet-top"><span class="tag">Group</span><span>Embedded · Assistive tech</span></div>
           <h3>Smart Blind Stick: Low-Cost Embedded Mobility Aid</h3>
           <p>An Arduino-based smart cane that helps visually impaired users move more independently without relying on a smartphone.</p>
@@ -264,7 +219,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
           </ul>
           <p class="role"><b>My contribution</b>Built the GPS/GSM SOS module. It sends the user's live location as a Google Maps link by SMS to a caretaker, falling back to the last known position, and I tested the full workflow outdoors.</p>
           <ul class="stack"><li>Arduino Nano</li><li>SIM800L GSM</li><li>GPS (UART)</li><li>HC-SR04</li><li>433 MHz RF</li><li>C/C++</li></ul>
-          <div class="links"><a href="#" target="_blank" rel="noopener">Documentation ↗</a></div>
+          <div class="links"><a href="https://github.com/Madhuhansa28/Smart-Blind-Stick" target="_blank" rel="noopener">GitHub repo ↗</a></div>
         </div>
         <aside class="spec">
           <h4>Measured</h4>
@@ -272,6 +227,29 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
             <div><dt>Prototype cost</dt><dd>LKR 7,285</dd></div>
             <div><dt>Hazards sensed</dt><dd>3 <small>obstacles, water, low light</small></dd></div>
             <div><dt>Tests</dt><dd class="txt">All passed <small>subsystem and integration</small></dd></div>
+          </dl>
+        </aside>
+      </article>
+
+      <article class="sheet">
+        <div class="sheet-main">
+          <div class="sheet-top"><span class="tag">Individual</span><span>TinyML · Wearables · HCI</span></div>
+          <h3>Wearable Gesture Controller using TinyML</h3>
+          <p>A glove that controls presentations wirelessly by acting as a Bluetooth keyboard, so the computer needs no extra software.</p>
+          <ul class="pts">
+            <li>Trained a neural network in Edge Impulse on MPU6050 motion data to classify swipe and wrist-twist gestures on an ESP32.</li>
+            <li>Added filtering so accidental movements don't trigger slide changes.</li>
+            <li>Ran a within-subjects user study comparing gesture and keyboard input; every participant preferred the glove.</li>
+          </ul>
+          <ul class="stack"><li>ESP32</li><li>MPU6050</li><li>Edge Impulse</li><li>Arduino C++</li><li>BLE HID</li><li>Python</li><li>SciPy</li></ul>
+          <div class="links"><a href="https://github.com/Madhuhansa28/wearable-gesture-controller" target="_blank" rel="noopener">GitHub repo ↗</a></div>
+        </div>
+        <aside class="spec">
+          <h4>Measured</h4>
+          <dl>
+            <div><dt>Test accuracy</dt><dd>96.8%</dd></div>
+            <div><dt>Inference time</dt><dd>7 ms <small>on the ESP32</small></dd></div>
+            <div><dt>Usability (SUS)</dt><dd>90.5 <small>vs 83.0 for keyboard, n = 5</small></dd></div>
           </dl>
         </aside>
       </article>
@@ -287,7 +265,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
             <li>Privacy by design: informed consent, data minimisation, on-device storage and pseudonymised export.</li>
           </ul>
           <ul class="stack"><li>Kotlin</li><li>Jetpack Compose</li><li>Room</li><li>Python</li><li>pandas</li><li>statsmodels</li></ul>
-          <div class="links"><a href="#" target="_blank" rel="noopener">Implementation ↗</a></div>
+          <div class="links"><a href="https://github.com/Madhuhansa28/WellbeingTracker" target="_blank" rel="noopener">GitHub repo ↗</a></div>
         </div>
         <aside class="spec">
           <h4>Method</h4>
@@ -309,7 +287,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
           </ul>
           <p class="role"><b>My contribution</b>Implemented A* pathfinding to find the shortest route on the building map, including routes that cross floors.</p>
           <ul class="stack"><li>Kotlin</li><li>ARCore</li><li>Cloud Anchors</li><li>SceneView</li><li>Firestore</li></ul>
-          <div class="links"><a href="#" target="_blank" rel="noopener">Documentation ↗</a></div>
+          <div class="links"><a href="https://github.com/Binupa-21/Navix" target="_blank" rel="noopener">Team repo on GitHub ↗</a></div>
         </div>
         <aside class="spec">
           <h4>Core</h4>
@@ -317,6 +295,29 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
             <div><dt>Routing</dt><dd class="txt">A* search</dd></div>
             <div><dt>Scope</dt><dd class="txt">Multi-floor</dd></div>
             <div><dt>Alignment</dt><dd class="txt">Cloud Anchors</dd></div>
+          </dl>
+        </aside>
+      </article>
+
+      <article class="sheet">
+        <div class="sheet-main">
+          <div class="sheet-top"><span class="tag live">Ongoing</span><span class="tag">Individual</span><span>HPC · Edge AI</span></div>
+          <h3>Parallel and Quantized CNN Inference on Edge and GPU Hardware</h3>
+          <p>A CNN inference engine written from scratch, then sped up step by step with multicore parallelism, SIMD, INT8 quantization and GPU kernels.</p>
+          <ul class="pts">
+            <li>Every version is benchmarked for speedup, scaling, accuracy and energy use.</li>
+            <li>Results are compared against TensorFlow Lite on three platforms.</li>
+          </ul>
+          <ul class="stack"><li>C/C++</li><li>OpenMP</li><li>CUDA</li><li>ARM NEON / AVX</li><li>PyTorch</li><li>TensorFlow Lite</li></ul>
+          <div class="links"><a href="https://github.com/Madhuhansa28/parallel-cnn-inference" target="_blank" rel="noopener">GitHub repo ↗</a></div>
+        </div>
+        <aside class="spec">
+          <h4>Benchmark targets</h4>
+          <dl>
+            <div><dt>Edge</dt><dd class="txt">Raspberry Pi</dd></div>
+            <div><dt>CPU</dt><dd class="txt">Multicore x86</dd></div>
+            <div><dt>GPU</dt><dd class="txt">NVIDIA CUDA</dd></div>
+            <div><dt>Precision</dt><dd class="txt">FP32 → INT8</dd></div>
           </dl>
         </aside>
       </article>
@@ -374,6 +375,11 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
           <li><strong>Nexus Club</strong><span class="when">2024 – 2025</span><span class="sub">Member, Faculty of Engineering</span></li>
           <li><strong>Media Unit</strong><span class="when"></span><span class="sub">Member, Rahula College, Matara</span></li>
         </ul>
+        <h5 style="margin-top:36px">References</h5>
+        <ul class="rows">
+          <li><strong>Dr. Randima Dinalankara</strong><span class="when"></span><span class="sub">University of Sri Jayewardenepura · <a href="mailto:randima@sjp.ac.lk">randima@sjp.ac.lk</a></span></li>
+          <li><strong>Dr. W.G.C.W. Kumara</strong><span class="when"></span><span class="sub">University of Sri Jayewardenepura · <a href="mailto:chinthakawk@sjp.ac.lk">chinthakawk@sjp.ac.lk</a></span></li>
+        </ul>
         <h5 style="margin-top:36px">Languages</h5>
         <p style="margin:0">English, Sinhala</p>
       </div>
@@ -392,8 +398,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
     </div>
     <div class="social">
       <a href="https://github.com/Madhuhansa28?tab=repositories" target="_blank" rel="noopener">GitHub ↗</a>
-      <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn ↗</a>
-      <a href="https://medium.com/" target="_blank" rel="noopener">Medium ↗</a>
+      <a href="https://www.linkedin.com/in/madhuhansa-wijesinghe-a9404a371/" target="_blank" rel="noopener">LinkedIn ↗</a>
     </div>
   </div>
 </section>
