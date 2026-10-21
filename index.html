@@ -195,7 +195,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
       <ul class="pins" aria-label="Research interests">
         <li><span class="pn">PIN 1</span><span>Embedded systems &amp; IoT</span></li>
         <li><span class="pn">PIN 2</span><span>TinyML and on-device inference</span></li>
-        <li><span class="pn">PIN 3</span><span>High performance computing: OpenMP, CUDA, SIMD, quantization</span></li>
+        <li><span class="pn">PIN 3</span><span>High performance computing: CUDA, GPU kernel optimization, OpenMP</span></li>
         <li><span class="pn">PIN 4</span><span>Robotics with ROS 2</span></li>
         <li><span class="pn">PIN 5</span><span>Assistive technology and human-centred evaluation</span></li>
       </ul>
@@ -301,23 +301,23 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 
       <article class="sheet">
         <div class="sheet-main">
-          <div class="sheet-top"><span class="tag live">Ongoing</span><span class="tag">Individual</span><span>HPC · Edge AI</span></div>
-          <h3>Parallel and Quantized CNN Inference on Edge and GPU Hardware</h3>
-          <p>A CNN inference engine written from scratch, then sped up step by step with multicore parallelism, SIMD, INT8 quantization and GPU kernels.</p>
+          <div class="sheet-top"><span class="tag live">Ongoing</span><span class="tag">Individual</span><span>HPC · GPU Computing</span></div>
+          <h3>GPU-Accelerated CNN Inference with Custom CUDA Kernels</h3>
+          <p>CNN inference written from scratch in C/C++ and CUDA, then optimized on the GPU step by step with custom kernels, shared-memory tiling and reduced-precision (FP16) arithmetic.</p>
           <ul class="pts">
-            <li>Every version is benchmarked for speedup, scaling, accuracy and energy use.</li>
-            <li>Results are compared against TensorFlow Lite on three platforms.</li>
+            <li>Every version is benchmarked for speedup, batch-size scaling and accuracy on CIFAR-10.</li>
+            <li>Results are compared against a serial CPU baseline and PyTorch/cuDNN on the same GPU.</li>
           </ul>
-          <ul class="stack"><li>C/C++</li><li>OpenMP</li><li>CUDA</li><li>ARM NEON / AVX</li><li>PyTorch</li><li>TensorFlow Lite</li></ul>
-          <div class="links"><a href="https://github.com/Madhuhansa28/parallel-cnn-inference" target="_blank" rel="noopener">GitHub repo ↗</a></div>
+          <ul class="stack"><li>C/C++</li><li>CUDA</li><li>OpenMP</li><li>PyTorch</li><li>Python</li></ul>
+          <div class="links"><a href="https://github.com/Madhuhansa28/gpu-cnn-inference-cuda" target="_blank" rel="noopener">GitHub repo ↗</a></div>
         </div>
         <aside class="spec">
           <h4>Benchmark targets</h4>
           <dl>
-            <div><dt>Edge</dt><dd class="txt">Raspberry Pi</dd></div>
-            <div><dt>CPU</dt><dd class="txt">Multicore x86</dd></div>
+            <div><dt>Baseline</dt><dd class="txt">Serial CPU</dd></div>
+            <div><dt>Reference</dt><dd class="txt">PyTorch / cuDNN</dd></div>
             <div><dt>GPU</dt><dd class="txt">NVIDIA CUDA</dd></div>
-            <div><dt>Precision</dt><dd class="txt">FP32 → INT8</dd></div>
+            <div><dt>Precision</dt><dd class="txt">FP32 → FP16</dd></div>
           </dl>
         </aside>
       </article>
@@ -333,7 +333,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
       <div class="skill"><h4>Languages</h4><p>Python, C, C++, Java, Kotlin, JavaScript, ARM Assembly</p></div>
       <div class="skill"><h4>Embedded &amp; IoT</h4><p>ESP32, Arduino (ATmega328P), Raspberry Pi, MPU6050, HC-SR04, GPS/GSM (SIM800L), 433 MHz RF, BLE (HID)</p></div>
       <div class="skill"><h4>AI / Machine Learning</h4><p>TinyML (Edge Impulse), TensorFlow, TensorFlow Lite, PyTorch, Keras</p></div>
-      <div class="skill"><h4>High Performance Computing</h4><p>OpenMP, CUDA, SIMD (ARM NEON / AVX), INT8 quantization</p></div>
+      <div class="skill"><h4>High Performance Computing</h4><p>CUDA, GPU kernel optimization, OpenMP, reduced-precision (FP16) computing</p></div>
       <div class="skill"><h4>Robotics</h4><p>ROS 2</p></div>
       <div class="skill"><h4>Mobile</h4><p>Android (Kotlin, Jetpack Compose, Room), ARCore, SceneView</p></div>
       <div class="skill"><h4>Web</h4><p>ReactJS, NodeJS, Bootstrap</p></div>
